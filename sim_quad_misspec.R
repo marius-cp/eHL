@@ -24,7 +24,7 @@ core.max <- 50
 cl <- makeCluster(min(parallel::detectCores()-1, core.max) )
 registerDoParallel(cl)
 start.time <- Sys.time()
-MCsim <- foreach(i = 1:3000, .combine=rbind, .packages = c("tidyverse", "foreach"))%dopar%{
+MCsim <- foreach(i = 1:5000, .combine=rbind, .packages = c("tidyverse", "foreach"))%dopar%{
 
 iter.obs <- foreach(i = 1:length(N))%do% {
 n <-  N[i]
@@ -76,10 +76,9 @@ stopCluster(cl)
 end.time <- Sys.time()
 (run.time <- end.time-start.time)
 
-#do.call(rbind, MCsim)
+# Time difference of 8.669647 hours, 50 cores
 
-
-saveRDS(do.call(rbind, MCsim), "sim_res/MCsim_quad_misspec_boot10_Sseq_05022021.rds")
+saveRDS(do.call(rbind, MCsim), "MCsim_data.rds")
 
 
 dd <- do.call(rbind, MCsim) %>% data.frame() %>% 
@@ -88,3 +87,4 @@ dd <- do.call(rbind, MCsim) %>% data.frame() %>%
          obs=as.numeric(obs),
          S=as.numeric(S), 
          test = as.character(test))
+dd
