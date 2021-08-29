@@ -3,7 +3,7 @@ setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 
 library(tidyverse);library(dplyr);library(kableExtra);library(ggforce);library(scales)
 
-res <- readRDS("MCsim_quad_misspec_boot10_Sseq_05022021.rds")
+res <- readRDS("MCsim_data.rds")
 
 # power plot -------------------------------------------------------------------
 
@@ -114,4 +114,5 @@ pivot_wider( sizes %>% select(-"cHL", -"oracle_eHL") %>% filter(complete.cases(.
     kable_styling()%>% 
     add_header_above(c(" " = 1, " " = 1, "oracle eHL" = 2, "eHL" = 5))
   
+# *100 mutiplicates also the obs, remove the 2 zeros manually. 
   
