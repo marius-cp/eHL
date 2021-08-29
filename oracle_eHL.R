@@ -38,14 +38,3 @@ oracle_eHL <- function(y,P,cep, boot = 10, s=.5){
   return(eval.orcale)
   }
 
-  
-
-
-
-s=0
-cep=pr
-P=dt$prediction
-
-nrow(splitted.2)
-
-
