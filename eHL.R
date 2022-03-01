@@ -1,8 +1,8 @@
 eHL <- function(y,P,boot=10, s =.5){
 # y is the realization
 # P is the prediction
-# split: fraction of observations uswed for estimating q
-# ad qq = 10 as inputs when decommenting the quantile binning e-value HL
+# split: fraction of observations used for estimating q
+# ad qq = 10 as inputs when de-commenting the quantile binning e-value HL
   
 df <-  data.frame("y"=y, "P"=P)
 
