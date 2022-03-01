@@ -59,7 +59,7 @@ decomp <- rlist::list.append(decomp, p)
 }
 pp <- grid.arrange(grobs=decomp, ncol = 3)
 pp
-ggsave("../plots/CORPreldiagsDGP.pdf", plot = pp,width = 9, height = 6 )
+ggsave("plots/Fig_1.pdf", plot = pp,width = 9, height = 6 )
 
 
 
