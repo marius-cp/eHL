@@ -87,7 +87,7 @@ iter.split <- foreach(s = 1:length(S))%do% {
 eHL.s. <- eHL(y=dt$y, P=dt$prediction, s=S[s], boot=10)
 return(list("test"= "eHL", "value" = eHL.s., "obs" = n, "J" = J[j], "S" = S[s]))  
 }
-e.val.HL <- do.call(rbind, iter.split)# das kostet bestimmt zeit...
+e.val.HL <- do.call(rbind, iter.split) 
 list(p.val.cHL,e.val.HL, e.val.oracle.eHL, e.val.oracle.eHL.s0)
 }
 do.call(rbind,do.call(Map, c(f = rbind, HLs))) 
