@@ -19,18 +19,6 @@ Code for technical report ‘A safe Hosmer-Lemeshow test’
 
 -   Fig 1 created by the `Fig_1-2.R`
 
-<p align="middle">
-<img src="plots/Fig_1.pdf" />
-</p>
-
 -   Fig 2: created by the `Fig_1-2.R`
 
-<p align="middle">
-<img src="plots/Fig_2.pdf" />
-</p>
-
 -   Fig 3 created by the `Fig_3.R`
-
-<p align="middle">
-<img src="plots/Fig_3.pdf" />
-</p>

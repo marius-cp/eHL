@@ -14,23 +14,9 @@ output: github_document
 
 * `oracle_eHL.R`: calculates the optimal (hypothetical) e-value 
 
-
 * Fig 1 created by the   `Fig_1-2.R`
-
-
-<p align="middle">
-<img src="plots/Fig_1.pdf" />
-</p>
 
 * Fig 2: created by the   `Fig_1-2.R`
 
-
-<p align="middle">
-<img src="plots/Fig_2.pdf" />
-</p>
-
 *  Fig 3 created by the   `Fig_3.R`
 
-<p align="middle">
-<img src="plots/Fig_3.pdf" />
-</p>
