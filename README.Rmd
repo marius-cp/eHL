@@ -5,7 +5,7 @@ output: github_document
 
 ### Citation
 
-T. Dimitriadis, A. Henzi, M. Puke, and J. Ziegel. A safe Hosmer-Lemeshow test. *Preprint*, [arXiv:2203.00426](https://doi.org/10.48550/arXiv.2203.00426), 2022. 
+T. Dimitriadis, A. Henzi, M. Puke, and J. Ziegel. A safe Hosmer-Lemeshow test. *Preprint*, [*arXiv:2203.00426*](https://doi.org/10.48550/arXiv.2203.00426), 2022. 
 
 ### eHL Simulation
 
